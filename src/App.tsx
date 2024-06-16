@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import HookTest from './HookTest'
 import './App.css'
 
