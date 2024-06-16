@@ -2,8 +2,8 @@ import { useCountDown } from "./hooks";
 
 const HookTest: React.FC = () => {
   const { time, start, pause, reset, formattedTime } = useCountDown(30, {
-    interval: 500,
-    stopTime: 10,
+    interval: 1000,
+    stopTime: 0,
     onEnd: () => {
       alert("计时结束");
     },
