@@ -6,7 +6,6 @@
     padding: 20px;
     width: 100vw;
     height: 100vh;
-    background-color: #F1F2F5; /* 浅蓝色背景 */
   }
   
   .hook {
@@ -39,11 +38,11 @@
     cursor: pointer;
     border: none;
     border-radius: 4px;
-    background-color: #eee; /* 蓝色背景 */
-    color: #000; /* 白色字体 */
+    background-color: #002F21; /* 蓝色背景 */
+    color: #eee; /* 白色字体 */
   }
   
   button:hover {
-    background-color: #007bff; /* 深蓝色悬停背景 */
+    background-color: #099d71; /* 深蓝色悬停背景 */
     color: #F1F2F5;
   }
