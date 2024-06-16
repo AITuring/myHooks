@@ -1,12 +1,13 @@
-import HookTest from './HookTest'
-import './App.css'
+import { CountDownDemo, PreviousDemo } from "./demo";
+import "./App.css";
 
 function App() {
   return (
-    <>
-      <HookTest />
-    </>
-  )
+    <div className="board">
+      <CountDownDemo />
+      <PreviousDemo />
+    </div>
+  );
 }
 
-export default App
+export default App;

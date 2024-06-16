@@ -5,3 +5,13 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+}
