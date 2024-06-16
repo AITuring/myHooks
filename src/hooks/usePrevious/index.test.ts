@@ -23,9 +23,9 @@ describe("usePrevious", () => {
     });
     rerender({ value: "updated" });
     expect(result.current).toBe('initial');
-    rerender({ value: true });
+    rerender({ value: String(true) });
     expect(result.current).toBe("updated");
-    rerender({ value: 1 });
+    rerender({ value: String(1)  });
     expect(result.current).toBe(true);
   })
 });
