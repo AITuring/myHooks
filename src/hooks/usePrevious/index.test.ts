@@ -26,7 +26,7 @@ describe("usePrevious", () => {
     rerender({ value: String(true) });
     expect(result.current).toBe("updated");
     rerender({ value: String(1)  });
-    expect(result.current).toBe(true);
+    expect(result.current).toBe("true");
   })
 });
 

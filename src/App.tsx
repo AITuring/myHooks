@@ -1,4 +1,4 @@
-import { CountDownDemo, PreviousDemo } from "./demo";
+import { CountDownDemo, PreviousDemo, LatestDemo } from "./demo";
 import "./App.css";
 
 function App() {
@@ -6,6 +6,7 @@ function App() {
     <div className="board">
       <CountDownDemo />
       <PreviousDemo />
+      <LatestDemo />
     </div>
   );
 }
