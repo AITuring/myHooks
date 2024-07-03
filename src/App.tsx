@@ -1,4 +1,4 @@
-import { CountDownDemo, PreviousDemo, LatestDemo, CreationDemo} from "./demo";
+import { CountDownDemo, PreviousDemo, LatestDemo, CreationDemo, FetchWithRetryDemo} from "./demo";
 import "./App.css";
 
 
@@ -9,6 +9,7 @@ function App() {
       <PreviousDemo />
       <LatestDemo />
       <CreationDemo />
+      <FetchWithRetryDemo />
     </div>
   );
 }
