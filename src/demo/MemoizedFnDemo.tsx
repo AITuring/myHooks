@@ -1,7 +1,9 @@
-import { useCountDown } from "../hooks";
+// TODO 等待Message组件
+import { useMemoizedFn } from "../hooks";
+import { useCallback } from "react";
 import "./demo.css";
 
-const CountDownDemo: React.FC = () => {
+const MemoizedFnDemo: React.FC = () => {
     const { time, start, pause, reset, formattedTime } = useCountDown(300, {
         interval: 1000,
         stopTime: 0,
@@ -13,7 +15,7 @@ const CountDownDemo: React.FC = () => {
     return (
         <div className="hook">
             <div className="hook-head">
-                <h2>useCountDown</h2>
+                <h2>useMemoizedFn</h2>
                 <h3>{time}s</h3>
                 <h3>{formattedTime}</h3>
             </div>
@@ -26,4 +28,4 @@ const CountDownDemo: React.FC = () => {
     );
 };
 
-export default CountDownDemo;
+export default MemoizedFnDemo;

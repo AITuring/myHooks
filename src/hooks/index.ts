@@ -9,6 +9,7 @@ import useCreation from "./useCreation";
 import useDeepCompareEffect from "./useDeepCompareEffect";
 import useFetchWithRetry from "./useFetchWithRetry";
 import useUpdateEffect from "./useUpdateEffect";
+import useMemoizedFn from "./useMemoizedFn";
 
 
 export {
@@ -22,5 +23,6 @@ export {
     useCreation,
     useDeepCompareEffect,
     useFetchWithRetry,
-    useUpdateEffect
+    useUpdateEffect,
+    useMemoizedFn
 }
