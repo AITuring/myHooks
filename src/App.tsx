@@ -23,19 +23,21 @@ function App() {
                 <Col>
                     <LatestDemo />
                 </Col>
+            </Row>
+            <Row>
                 <Col>
                     <UpdateEffectDemo />
                 </Col>
-            </Row>
-            <Row>
                 <Col>
                     <CreationDemo />
                 </Col>
                 <Col>
                     <FetchWithRetryDemo />
                 </Col>
-                <Col>{/* <VirtualListDemo /> */}</Col>
-                <Col></Col>
+            </Row>
+            <Row>
+            <Col>{/* <VirtualListDemo /> */}</Col>
+            <Col></Col>
             </Row>
         </div>
     );
