@@ -6,9 +6,9 @@ import useEventListener from "./useEventListener";
 import useLocalStorage from "./useLocalStorage";
 import useToggle from "./useToggle";
 import useCreation from "./useCreation";
-import useVirtualList from "./useVirtualList";
 import useDeepCompareEffect from "./useDeepCompareEffect";
 import useFetchWithRetry from "./useFetchWithRetry";
+import useUpdateEffect from "./useUpdateEffect";
 
 
 export {
@@ -20,7 +20,7 @@ export {
     useLocalStorage,
     useToggle,
     useCreation,
-    useVirtualList,
     useDeepCompareEffect,
-    useFetchWithRetry
+    useFetchWithRetry,
+    useUpdateEffect
 }

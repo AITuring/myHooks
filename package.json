@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "test": "vitest",
-    "coverage": "vitest run --coverage",
+    "coverage": "vitest run --coverage && npm run open:coverage",
+    "open:coverage": "open ./coverage/index.html",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -20,6 +21,7 @@
     "@types/jest": "^29.5.12",
     "classnames": "^2.5.1",
     "jsdom": "^24.1.0",
+    "open": "^10.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "vitest": "^1.6.0"
