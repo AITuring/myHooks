@@ -6,6 +6,7 @@ import {
     CreationDemo,
     FetchWithRetryDemo,
     UpdateEffectDemo,
+    MemoizedFnDemo,
 } from "./demo";
 import "./App.css";
 
@@ -36,8 +37,10 @@ function App() {
                 </Col>
             </Row>
             <Row>
-            <Col>{/* <VirtualListDemo /> */}</Col>
-            <Col></Col>
+                <Col>{/* <VirtualListDemo /> */}</Col>
+                <Col>
+                    <MemoizedFnDemo />
+                </Col>
             </Row>
         </div>
     );
