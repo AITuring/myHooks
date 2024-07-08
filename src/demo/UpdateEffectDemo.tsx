@@ -8,19 +8,16 @@ const UpdateEffectDemo: React.FC = () => {
     const [updateEffectCount, setUpdateEffectCount] = useState(0);
 
     useEffect(() => {
-        console.log("useEffect", { count, effectCount });
         setEffectCount((c) => c + 1);
     }, [count]);
 
     useUpdateEffect(() => {
-        console.log('useUpdateEffect', { count, updateEffectCount });
         setUpdateEffectCount((c) => c + 1);
         return () => {
             // do something
         };
     }, [count]); // you can include deps array if necessary
 
-    console.log(count, effectCount, updateEffectCount);
 
     return (
         <div className="hook">

@@ -10,6 +10,8 @@ import useDeepCompareEffect from "./useDeepCompareEffect";
 import useFetchWithRetry from "./useFetchWithRetry";
 import useUpdateEffect from "./useUpdateEffect";
 import useMemoizedFn from "./useMemoizedFn";
+import useSize from "./useSize";
+import usePerformanceMonitoring from "./usePerformanceMonitoring";
 
 
 export {
@@ -24,5 +26,7 @@ export {
     useDeepCompareEffect,
     useFetchWithRetry,
     useUpdateEffect,
-    useMemoizedFn
+    useMemoizedFn,
+    useSize,
+    usePerformanceMonitoring
 }

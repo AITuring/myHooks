@@ -6,6 +6,7 @@ import FetchWithRetryDemo from "./FetchWithRetryDemo";
 // import VirtualListDemo from "./VirtualListDemo";
 import UpdateEffectDemo from "./UpdateEffectDemo";
 import MemoizedFnDemo from "./MemoizedFnDemo";
+import SizeDemo from "./SizeDemo";
 
 export {
     CountDownDemo,
@@ -16,4 +17,5 @@ export {
     // VirtualListDemo,
     UpdateEffectDemo,
     MemoizedFnDemo,
+    SizeDemo
 };
