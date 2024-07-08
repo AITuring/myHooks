@@ -8,6 +8,7 @@ import {
     UpdateEffectDemo,
     MemoizedFnDemo,
     SizeDemo,
+    HoverDemo
 } from "./demo";
 import { usePerformanceMonitoring } from "./hooks";
 import "./App.css";
@@ -72,12 +73,25 @@ function App() {
                 </Col>
             </Row>
             <Row>
-                <Col>{/* <VirtualListDemo /> */}</Col>
+                <Col>
+                    <HoverDemo />
+                </Col>
                 <Col>
                     <SizeDemo />
                 </Col>
                 <Col>
                     <MemoizedFnDemo />
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+
+                </Col>
+                <Col>
+
+                </Col>
+                <Col>
+
                 </Col>
             </Row>
         </div>

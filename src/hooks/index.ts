@@ -12,6 +12,7 @@ import useUpdateEffect from "./useUpdateEffect";
 import useMemoizedFn from "./useMemoizedFn";
 import useSize from "./useSize";
 import usePerformanceMonitoring from "./usePerformanceMonitoring";
+import useHover from "./useHover";
 
 
 export {
@@ -28,5 +29,6 @@ export {
     useUpdateEffect,
     useMemoizedFn,
     useSize,
-    usePerformanceMonitoring
+    usePerformanceMonitoring,
+    useHover
 }
