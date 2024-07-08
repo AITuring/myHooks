@@ -6,15 +6,6 @@ type Size = {
     height: number;
 };
 
-type ResizeObserverEntryType = {
-    target: HTMLElement;
-    contentRect: {
-        width: number;
-        height: number;
-        // 其他属性...
-    };
-    // 其他属性...
-};
 
 const useSize = (targetRef: RefObject<HTMLElement>): Size | undefined => {
     const [size, setSize] = useState<Size | undefined>(() => {

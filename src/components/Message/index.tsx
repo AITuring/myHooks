@@ -1,4 +1,4 @@
-import { CSSProperties,FC, ReactNode} from "react";
+import { CSSProperties, ReactNode} from "react";
 
 
 export type Position = "top" | "bottom";
@@ -12,6 +12,6 @@ export interface MessageProps {
     id?: number;
 }
 
-export const MessageProvider: FC<{}> = (props) => {
-    return <div></div>
-}
+// export const MessageProvider: FC<{}> = (props) => {
+//     return <div></div>
+// }

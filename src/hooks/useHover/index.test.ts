@@ -1,7 +1,7 @@
 import { renderHook } from "@testing-library/react-hooks";
 import { vi, describe, it, expect } from "vitest";
 import useHover, { HoverOptions } from ".";
-import { useReducer, useRef } from "react";
+import { useRef } from "react";
 
 describe("useHover", () => {
     let element: HTMLElement;
