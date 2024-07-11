@@ -3,7 +3,6 @@ import react from "@vitejs/plugin-react-swc";
 import viteCompression from "vite-plugin-compression";
 import { visualizer } from "rollup-plugin-visualizer";
 
-// https://vitejs.dev/config/
 export default defineConfig({
     plugins: [
         react(),
@@ -27,15 +26,57 @@ export default defineConfig({
         },
     },
     build: {
+        lib: {
+            entry: "src/main.tsx",
+            name: "MyHooks", // UMD 模块名称
+            formats: ["es", "cjs", "umd"], // 输出格式
+            fileName: (format) => `my-library.${format}.js`, // 输出文件名
+        },
         rollupOptions: {
-            output: {
-                manualChunks: (id) => {
-                    if (id.includes("node_modules")) {
-                        return "vendor";
-                    } else {
-                        return "common";
-                    }
+            external: ["react", "react-dom"],
+            output: [
+                {
+                    format: "es",
+                    entryFileNames: "[name].es.js",
+                    chunkFileNames: "chunks/[name]-[hash].js",
+                    dir: "dist/es",
+                    globals: {
+                        react: "React",
+                        "react-dom": "ReactDOM",
+                    },
                 },
+                {
+                    format: "cjs",
+                    entryFileNames: "[name].cjs.js",
+                    chunkFileNames: "chunks/[name]-[hash].js",
+                    dir: "dist/cjs",
+                    globals: {
+                        react: "React",
+                        "react-dom": "ReactDOM",
+                    },
+                },
+                {
+                    format: "umd",
+                    entryFileNames: "[name].umd.js",
+                    name: "MyHooks",
+                    globals: {
+                        react: "React",
+                        "react-dom": "ReactDOM",
+                    },
+                },
+            ],
+            manualChunks: (id) => {
+                if (id.includes("node_modules")) {
+                    return "vendor";
+                } else {
+                    return "common";
+                }
+            },
+        },
+        terserOptions: {
+            compress: {
+                drop_console: true, // 生产环境自动删除console
+                pure_funcs: ["console.log"], // 压缩的时候删除所有的console
             },
         },
     },
