@@ -8,7 +8,8 @@ import {
     UpdateEffectDemo,
     MemoizedFnDemo,
     SizeDemo,
-    HoverDemo
+    HoverDemo,
+    MessageDemo,
 } from "./demo";
 import { usePerformanceMonitoring } from "./hooks";
 import "./App.css";
@@ -85,14 +86,10 @@ function App() {
             </Row>
             <Row>
                 <Col>
-
+                    <MessageDemo />
                 </Col>
-                <Col>
-
-                </Col>
-                <Col>
-
-                </Col>
+                <Col></Col>
+                <Col></Col>
             </Row>
         </div>
     );

@@ -8,6 +8,7 @@ import UpdateEffectDemo from "./UpdateEffectDemo";
 import MemoizedFnDemo from "./MemoizedFnDemo";
 import SizeDemo from "./SizeDemo";
 import HoverDemo from "./HoverDemo";
+import MessageDemo from "./MessageDemo";
 
 export {
     CountDownDemo,
@@ -19,5 +20,6 @@ export {
     UpdateEffectDemo,
     MemoizedFnDemo,
     SizeDemo,
-    HoverDemo
+    HoverDemo,
+    MessageDemo
 };
