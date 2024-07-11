@@ -13,7 +13,8 @@ export interface MessageProps {
     content: ReactNode;
     duration?: number;
     id?: number;
-    onClose?: (id: number) => void;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    onClose?: (args: any) => void;
 }
 
 const MessageItem: FC<MessageProps> = (props) => {
@@ -36,7 +37,7 @@ export interface MessageRef {
     clearAll: () => void;
 }
 
-export const MessageProvider = forwardRef<MessageRef, object>((ref) => {
+export const MessageProvider = forwardRef<MessageRef, object>((_props,ref) => {
     const { messageList, add, update, remove, clearAll } = useStore("top");
 
     if('current' in ref!) {

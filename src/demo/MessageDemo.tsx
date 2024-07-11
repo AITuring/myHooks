@@ -13,14 +13,13 @@ function MessageTop() {
                 });
             }}
         >
-            顶部成功
+            顶部
         </button>
     );
 }
 
 function MessageBottom() {
     const message = useMessage();
-
     return (
         <button
             onClick={() => {
@@ -30,7 +29,7 @@ function MessageBottom() {
                 });
             }}
         >
-            顶部成功
+            底部
         </button>
     );
 }
