@@ -10,9 +10,11 @@ import {
     SizeDemo,
     HoverDemo,
     MessageDemo,
+    LazyImagesDemo
 } from "./demo";
 // import { usePerformanceMonitoring } from "./hooks";
 import "./App.css";
+
 
 function App() {
     // 性能监控
@@ -88,7 +90,9 @@ function App() {
                 <Col>
                     <MessageDemo />
                 </Col>
-                <Col></Col>
+                <Col>
+                    <LazyImagesDemo />
+                </Col>
                 <Col></Col>
             </Row>
         </div>

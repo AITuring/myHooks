@@ -13,6 +13,8 @@ import useMemoizedFn from "./useMemoizedFn";
 import useSize from "./useSize";
 import usePerformanceMonitoring from "./usePerformanceMonitoring";
 import useHover from "./useHover";
+import useLazyImages from "./useLazyImages";
+
 
 
 export {
@@ -30,5 +32,6 @@ export {
     useMemoizedFn,
     useSize,
     usePerformanceMonitoring,
-    useHover
+    useHover,
+    useLazyImages
 }

@@ -41,3 +41,21 @@ button:hover {
     /* 深蓝色悬停背景 */
     color: #F1F2F5;
 }
+
+.waterfall {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.waterfall-image {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.3s;
+    will-change: opacity;
+}
+
+.waterfall-image.loaded {
+    opacity: 1;
+}

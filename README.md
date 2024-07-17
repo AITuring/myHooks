@@ -19,6 +19,7 @@
 | useSize   | ❌         | ✅     |
 | usePerformanceMonitoring | ❌     | ✅     |
 | useHover   | ✅     | ✅      |
+| useLazyImages   | ❌      | ✅      |
 
 
 # React Components

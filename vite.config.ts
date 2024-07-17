@@ -16,6 +16,11 @@ export default defineConfig({
         }),
         visualizer({ open: true }),
     ],
+    resolve: {
+        alias: {
+            "@": "/src",
+        },
+    },
     test: {
         globals: true,
         environment: "jsdom",

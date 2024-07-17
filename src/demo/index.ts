@@ -9,6 +9,7 @@ import MemoizedFnDemo from "./MemoizedFnDemo";
 import SizeDemo from "./SizeDemo";
 import HoverDemo from "./HoverDemo";
 import MessageDemo from "./MessageDemo";
+import LazyImagesDemo from "./LazyImagesDemo";
 
 export {
     CountDownDemo,
@@ -21,5 +22,6 @@ export {
     MemoizedFnDemo,
     SizeDemo,
     HoverDemo,
-    MessageDemo
+    MessageDemo,
+    LazyImagesDemo
 };
