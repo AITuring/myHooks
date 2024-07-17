@@ -46,7 +46,7 @@ const useLazyImages = (urls: string[], options?: UseLazyImageOptions) => {
             threshold: threshold, // 使用提取的 threshold 常量
         });
 
-        urls.forEach((url, index) => {
+        urls.forEach((_url, index) => {
             const imgElement = document.getElementById(
                 `image-${index}`
             ) as HTMLImageElement;

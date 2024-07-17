@@ -1,4 +1,4 @@
-import { Row, Col } from "./components";
+import { Row, Col } from "@/components";
 import {
     CountDownDemo,
     PreviousDemo,
@@ -11,7 +11,7 @@ import {
     HoverDemo,
     MessageDemo,
     LazyImagesDemo
-} from "./demo";
+} from "@/demo";
 // import { usePerformanceMonitoring } from "./hooks";
 import "./App.css";
 
