@@ -1,5 +1,5 @@
-import { useCountDown } from "../hooks";
-import "./demo.css";
+import { useCountDown } from "@/hooks";
+import "../demo.css";
 
 const CountDownDemo: React.FC = () => {
     const { time, start, pause, reset, formattedTime } = useCountDown(300, {

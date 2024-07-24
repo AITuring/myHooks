@@ -1,6 +1,6 @@
 // import { useRef } from "react";
-// import { useVirtualList } from "../hooks";
-// import "./demo.css";
+// import { useVirtualList } from "@/hooks";
+// import "../demo.css";
 
 // const data = Array.from({ length: 10000 }, (_, i) => `Item ${i}`);
 

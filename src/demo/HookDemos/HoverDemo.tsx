@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import { useHover } from "../hooks";
-import "./demo.css";
+import { useHover } from "@/hooks";
+import "../demo.css";
 
 const HoverDemo: React.FC = () => {
     const ref = useRef<HTMLDivElement>(null);

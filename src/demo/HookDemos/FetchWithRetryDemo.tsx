@@ -1,6 +1,6 @@
 import React from "react";
-import { useFetchWithRetry } from "../hooks";
-import "./demo.css";
+import { useFetchWithRetry } from "@/hooks";
+import "../demo.css";
 
 interface DataType {
     // 根据你的数据结构定义类型

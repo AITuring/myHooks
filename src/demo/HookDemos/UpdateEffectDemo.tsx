@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { useUpdateEffect } from "../hooks";
-import "./demo.css";
+import { useUpdateEffect } from "@/hooks";
+import "../demo.css";
 
 const UpdateEffectDemo: React.FC = () => {
     const [count, setCount] = useState(0);

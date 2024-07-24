@@ -1,6 +1,6 @@
-import { useMessage } from "../components/Message/useMessage";
-import { MessageConfigProvider } from "../components/Message/ConfigProvider";
-import "./demo.css";
+import { useMessage } from "@/components/Message/useMessage";
+import { MessageConfigProvider } from "@/components/Message/ConfigProvider";
+import "../demo.css";
 
 function MessageTop() {
     const message = useMessage();

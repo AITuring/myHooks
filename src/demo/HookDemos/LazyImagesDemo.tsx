@@ -1,16 +1,16 @@
-import { useLazyImages } from "../hooks";
-import "./demo.css";
-import image1 from "../assets/images/1.jpg";
-import image2 from "../assets/images/2.jpg";
-import image3 from "../assets/images/3.jpg";
-import image4 from "../assets/images/4.jpg";
-import image5 from "../assets/images/5.jpg";
-import image6 from "../assets/images/6.jpg";
-import image7 from "../assets/images/7.jpg";
-import image8 from "../assets/images/8.jpg";
-import image9 from "../assets/images/9.jpg";
-import image10 from "../assets/images/10.jpg";
-import loadingImg from "../assets/images/loading.png";
+import { useLazyImages } from "@/hooks";
+import "../demo.css";
+import image1 from "@/assets/images/1.jpg";
+import image2 from "@/assets/images/2.jpg";
+import image3 from "@/assets/images/3.jpg";
+import image4 from "@/assets/images/4.jpg";
+import image5 from "@/assets/images/5.jpg";
+import image6 from "@/assets/images/6.jpg";
+import image7 from "@/assets/images/7.jpg";
+import image8 from "@/assets/images/8.jpg";
+import image9 from "@/assets/images/9.jpg";
+import image10 from "@/assets/images/10.jpg";
+import loadingImg from "@/assets/images/loading.png";
 
 const LazyImagesDemo: React.FC = () => {
     const imageUrls = [

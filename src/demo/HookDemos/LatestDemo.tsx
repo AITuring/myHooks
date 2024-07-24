@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { useLatest } from "../hooks";
-import "./demo.css";
+import { useLatest } from "@/hooks";
+import "../demo.css";
 
 const LatestDemo: React.FC = () => {
     const [count, setCount] = useState(0);

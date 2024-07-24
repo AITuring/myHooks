@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import { useSize } from "../hooks";
-import "./demo.css";
+import { useSize } from "@/hooks";
+import "../demo.css";
 
 const SizeDemo: React.FC = () => {
     const ref = useRef<HTMLDivElement>(null);
