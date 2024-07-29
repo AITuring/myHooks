@@ -10,6 +10,7 @@ export default function CodeEditor() {
         language: 'typescript'
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     function onEditorChange(...args: any[]) {
         console.log(...args);
     }

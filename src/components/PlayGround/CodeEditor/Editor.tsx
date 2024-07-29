@@ -56,7 +56,7 @@ const Editor = (props: Props) => {
                 minimap: { enabled: false },
                 automaticLayout: true,
                 scrollBeyondLastLine: false,
-                scrollBar: {
+                scrollbar: {
                     verticalScrollbarSize: 6,
                     horizontalScrollbarSize: 6,
                 },
