@@ -1,5 +1,5 @@
-import Editor from "@monaco-editor/react";
 import Header from "./Header";
+import CodeEditor from "./CodeEditor";
 import { Allotment } from "allotment";
 import "allotment/dist/style.css";
 import Preview from "./Preview";
@@ -27,11 +27,7 @@ export default App;
             <Header />
             <Allotment defaultSizes={[100, 100]}>
                 <Allotment.Pane minSize={500}>
-                    <Editor
-                        height="500px"
-                        defaultLanguage="javascript"
-                        defaultValue={code}
-                    />
+                    <CodeEditor />
                 </Allotment.Pane>
                 <Allotment.Pane minSize={0}>
                     <Preview />

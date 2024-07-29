@@ -915,6 +915,11 @@
     "@typescript-eslint/types" "7.13.0"
     eslint-visitor-keys "^3.4.3"
 
+"@typescript/ata@^0.9.6":
+  version "0.9.6"
+  resolved "https://registry.yarnpkg.com/@typescript/ata/-/ata-0.9.6.tgz#0a65fa6b4e79f3df53d1bf060c7b6cb3ece06266"
+  integrity sha512-Kj3dmkIRAZ4YRp4hMgEYQ3PghSRO13oUtmhesun5AC9YT/EzZtLbvXBPiqu5clHEHE/chJ2lc3KUsZY1zwMqPg==
+
 "@ungap/structured-clone@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
