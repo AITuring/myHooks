@@ -1,0 +1,14 @@
+.header {
+    border-bottom: 1px solid #000;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.headerIcon {
+    width: 4vh;
+    height: 4vh;
+    margin-right: 20px;
+}
