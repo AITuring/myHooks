@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import iframeRaw from "./iframe.html?raw";
 
 const iframeUrl = URL.createObjectURL(
