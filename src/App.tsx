@@ -9,8 +9,8 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<ComponentDemo />} />
-                <Route path="/hooks" element={<HookDemos />} />
+                <Route path="/ui" element={<ComponentDemo />} />
+                <Route path="/" element={<HookDemos />} />
                 <Route path="/playground" element={<PlayGround />} />
             </Routes>
         </BrowserRouter>
