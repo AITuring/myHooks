@@ -1,4 +1,4 @@
-import editorIcon from '@/assets/editorIcon.png';
+import editorIcon from '/editor.png';
 import style from './index.module.css';
 const Header = () => {
     return (
