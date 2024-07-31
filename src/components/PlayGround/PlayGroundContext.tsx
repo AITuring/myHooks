@@ -1,7 +1,12 @@
 import { useState, createContext, PropsWithChildren } from "react";
-import { EditorFile } from "./CodeEditor/Editor";
 import { fileName2Language } from "./utils";
 import { initFiles } from "./file";
+
+export interface EditorFile {
+    name: string;
+    value: string;
+    language: string;
+}
 
 export interface EditorFiles {
     [key: string]: EditorFile;

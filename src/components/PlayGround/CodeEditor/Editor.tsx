@@ -1,12 +1,7 @@
 import MonacoEditor, { OnMount, EditorProps } from "@monaco-editor/react";
 import { createATA } from "./ata";
 import { editor } from 'monaco-editor';
-
-export interface EditorFile {
-    name: string;
-    value: string;
-    language: string;
-}
+import { EditorFile } from "../PlayGroundContext";
 
 interface Props {
     file: EditorFile;
