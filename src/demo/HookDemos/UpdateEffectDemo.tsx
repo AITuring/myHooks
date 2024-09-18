@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useUpdateEffect } from "@/hooks";
-import "../demo.css";
+import { Button, Card } from "@/components";
 
 const UpdateEffectDemo: React.FC = () => {
     const [count, setCount] = useState(0);
@@ -18,20 +18,21 @@ const UpdateEffectDemo: React.FC = () => {
         };
     }, [count]); // you can include deps array if necessary
 
-
     return (
-        <div className="hook">
-            <div className="hook-head">
-                <h2>useUpdateEffect</h2>
-                <p>effectCount: {effectCount}</p>
-                <p>updateEffectCount: {updateEffectCount}</p>
-            </div>
-            <div className="content">
-                <button onClick={() => setCount(prev => prev + 1)}>
+        <Card
+            title="useUpdateEffect"
+            content={
+                <>
+                    <p>effectCount: {effectCount}</p>
+                    <p>updateEffectCount: {updateEffectCount}</p>
+                </>
+            }
+            operation={
+                <Button onClick={() => setCount((prev) => prev + 1)}>
                     reRender
-                </button>
-            </div>
-        </div>
+                </Button>
+            }
+        />
     );
 };
 

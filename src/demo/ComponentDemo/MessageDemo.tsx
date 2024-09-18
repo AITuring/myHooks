@@ -1,12 +1,12 @@
 import { useMessage } from "@/components/Message/useMessage";
 import { MessageConfigProvider } from "@/components/Message/ConfigProvider";
-import "../demo.css";
+import {Button, Card} from '@/components'
 
 function MessageTop() {
     const message = useMessage();
 
     return (
-        <button
+        <Button
             onClick={() => {
                 message.add({
                     content: "请求成功",
@@ -14,14 +14,14 @@ function MessageTop() {
             }}
         >
             顶部
-        </button>
+        </Button>
     );
 }
 
 function MessageBottom() {
     const message = useMessage();
     return (
-        <button
+        <Button
             onClick={() => {
                 message.add({
                     content: "请求成功",
@@ -30,7 +30,7 @@ function MessageBottom() {
             }}
         >
             底部
-        </button>
+        </Button>
     );
 }
 
@@ -38,17 +38,17 @@ function MessageBottom() {
 const MessageDemo: React.FC = () => {
 
     return (
-        <div className="hook">
-            <div className="hook-head">
-                <h2>Message</h2>
-            </div>
-            <div className="content">
+        <Card
+        title="Message 消息提示"
+        content={
+            <>
                 <MessageConfigProvider>
                     <MessageTop />
                     <MessageBottom />
                 </MessageConfigProvider>
-            </div>
-        </div>
+            </>
+        }
+        />
     );
 };
 

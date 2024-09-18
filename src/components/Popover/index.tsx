@@ -1,5 +1,6 @@
 import { useInteractions, useFloating, useHover } from "@floating-ui/react";
 import { useState } from "react";
+import {Button} from '@/components';
 
 export default function Popover() {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,9 +18,9 @@ export default function Popover() {
 
     return (
         <>
-            <button ref={refs.setReference} {...getReferenceProps()}>
+            <Button ref={refs.setReference} {...getReferenceProps()}>
                 hello
-            </button>
+            </Button>
             {isOpen && (
                 <div
                     ref={refs.setFloating}

@@ -1,4 +1,3 @@
-import { Row, Col } from "@/components";
 import CountDownDemo from "./CountDownDemo";
 import PreviousDemo from "./PreviousDemo";
 import LatestDemo from "./LatestDemo";
@@ -10,7 +9,6 @@ import MemoizedFnDemo from "./MemoizedFnDemo";
 import SizeDemo from "./SizeDemo";
 import HoverDemo from "./HoverDemo";
 import LazyImagesDemo from "./LazyImagesDemo";
-import '../demo.css'
 // import { usePerformanceMonitoring } from "./hooks";
 
 function HookDemos() {
@@ -48,9 +46,9 @@ function HookDemos() {
     });
 
     return (
-        <div  className="">
-            <h2>Hooks Demo</h2>
-            <div className="grid-container">
+        <div className="p-8">
+            <h2 className="mb-8 text-2xl font-bold">Hooks Demo</h2>
+            <div className="grid gap-5 p-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 3xl:grid-cols-6">
                 <CountDownDemo />
 
                 <PreviousDemo />

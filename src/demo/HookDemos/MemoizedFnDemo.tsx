@@ -1,6 +1,6 @@
 import { useMemoizedFn } from "@/hooks";
 import React, { useCallback, useRef, useState } from "react";
-import "../demo.css";
+import {Button, Card} from '@/components'
 
 const ExpensiveTree = React.memo<{ [key: string]: any }>(({ showCount }) => {
     const renderCountRef = useRef(0);
@@ -9,9 +9,9 @@ const ExpensiveTree = React.memo<{ [key: string]: any }>(({ showCount }) => {
     return (
         <div>
             <p>Render Count: {renderCountRef.current}</p>
-            <button type="button" onClick={showCount}>
+            <Button onClick={showCount}>
                 showParentCount
-            </button>
+            </Button>
         </div>
     );
 });
@@ -28,25 +28,27 @@ const MemoizedFnDemo: React.FC = () => {
     });
 
     return (
-        <div className="hook">
-            <div className="hook-head">
-                <h2>useMemoizedFn</h2>
-            </div>
-            <div className="content">
-                <h3>count: {count}</h3>
-                <button
-                    onClick={() => {
-                        setCount((c) => c + 1);
-                    }}
-                >
-                    Add Count
-                </button>
-                <h3>Component with useCallback function:</h3>
+        <Card
+        title="useMemoizedFn"
+        content={
+            <>
+            <h3>count: {count}</h3>
+            <h3>Component with useCallback function:</h3>
                 <ExpensiveTree showCount={callbackFn} />
                 <h3>Component with useMemoizedFn function:</h3>
                 <ExpensiveTree showCount={memoizedFn} />
-            </div>
-        </div>
+            </>
+        }
+        operation={
+            <Button
+                onClick={() => {
+                    setCount((c) => c + 1);
+                }}
+            >
+                Add Count
+            </Button>
+        }
+        />
     );
 };
 

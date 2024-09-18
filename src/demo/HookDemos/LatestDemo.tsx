@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useLatest } from "@/hooks";
-import "../demo.css";
+import { Card } from "@/components";
 
 const LatestDemo: React.FC = () => {
     const [count, setCount] = useState(0);
@@ -23,16 +23,15 @@ const LatestDemo: React.FC = () => {
     }, []);
 
     return (
-        <div className="hook">
-            <div className="hook-head">
-                <h2>useLatest</h2>
-                <h3>default count: {count2}</h3>
-                <h3>latest count: {count}</h3>
-            </div>
-            <div className="content">
-                {/* <button onClick={() => setCount(count * 2)}>改变</button> */}
-            </div>
-        </div>
+        <Card
+            title="useLatest"
+            content={
+                <>
+                    <h3>default count: {count2}</h3>
+                    <h3>latest count: {count}</h3>
+                </>
+            }
+        />
     );
 };
 

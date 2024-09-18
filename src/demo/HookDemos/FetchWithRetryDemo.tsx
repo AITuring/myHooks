@@ -1,6 +1,6 @@
 import React from "react";
 import { useFetchWithRetry } from "@/hooks";
-import "../demo.css";
+import { Card } from "@/components";
 
 interface DataType {
     // 根据你的数据结构定义类型
@@ -19,36 +19,26 @@ const FetchWithRetryDemo: React.FC = () => {
 
     if (loading) {
         return (
-            <div className="hook">
-                <div className="hook-head">
-                    <h2>useFetchWithRetry</h2>
-                </div>
-                <div className="content">loading</div>
-            </div>
+            <Card title="useFetchWithRetry" content={<div>Loading...</div>} />
         );
     }
 
     if (error) {
         return (
-            <div className="hook">
-                <div className="hook-head">
-                    <h2>useFetchWithRetry</h2>
-                </div>
-                <div className="content">Error: {error.message}</div>
-            </div>
+            <Card title="useFetchWithRetry" content={<div>Error: {error.message}</div>} />
         );
     }
 
     return (
-        <div className="hook">
-            <div className="hook-head">
-                <h2>useFetchWithRetry</h2>
-            </div>
-            <div className="content">
-                <h3>Data fetched successfully:</h3>
-                {JSON.stringify(data, null, 2)}
-            </div>
-        </div>
+        <Card
+            title="useFetchWithRetry"
+            content={
+                <>
+                    <h3>Data fetched successfully:</h3>
+                    {JSON.stringify(data, null, 2)}
+                </>
+            }
+        />
     );
 };
 

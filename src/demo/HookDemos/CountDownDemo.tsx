@@ -1,5 +1,5 @@
 import { useCountDown } from "@/hooks";
-import "../demo.css";
+import {Button, Card} from '@/components'
 
 const CountDownDemo: React.FC = () => {
     const { time, start, pause, reset, formattedTime } = useCountDown(300, {
@@ -11,18 +11,22 @@ const CountDownDemo: React.FC = () => {
     });
 
     return (
-        <div className="hook">
-            <div className="hook-head">
-                <h2>useCountDown</h2>
+        <Card
+            title="useCountDown"
+            content={
+                <>
                 <h3>{time}s</h3>
                 <h3>{formattedTime}</h3>
-            </div>
-            <div className="content">
-                <button onClick={start}>开始计时</button>
-                <button onClick={pause}>停止计时</button>
-                <button onClick={reset}>重置计时</button>
-            </div>
-        </div>
+                </>
+            }
+            operation={
+                <>
+                    <Button onClick={start}>开始计时</Button>
+                    <Button onClick={pause}>停止计时</Button>
+                    <Button onClick={reset}>重置计时</Button>
+                </>
+            }
+        />
     );
 };
 

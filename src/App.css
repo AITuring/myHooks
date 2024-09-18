@@ -1,19 +1,4 @@
-body {
-    margin: 0;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-#root {
-    margin: 0 auto;
-    text-align: center;
-    width: 100vw;
-    height: 100vh;
-}
-
-.board {
-    /* display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px; */
-    padding: 20px;
-
-}

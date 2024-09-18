@@ -1,10 +1,17 @@
-import { defineConfig } from "vite";
+import { defineConfig, Plugin } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 // import viteCompression from "vite-plugin-compression";
 import { visualizer } from "rollup-plugin-visualizer";
+import tailwindcss from  'tailwindcss';
+import autoprefixer from 'autoprefixer';
 
 export default defineConfig({
+    css: {
+        postcss: {
+            plugins: [tailwindcss(), autoprefixer()] as Plugin[],
+        },
+    },
     plugins: [
         react(),
         // viteCompression({

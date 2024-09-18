@@ -3,17 +3,17 @@ import { HookDemos, ComponentDemo } from "./demo";
 import { PlayGround } from "./components";
 import "./App.css";
 
-
 function App() {
-
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/ui" element={<ComponentDemo />} />
-                <Route path="/" element={<HookDemos />} />
-                <Route path="/playground" element={<PlayGround />} />
-            </Routes>
-        </BrowserRouter>
+        <div className="w-screen h-screen m-0 text-center">
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/ui" element={<ComponentDemo />} />
+                    <Route path="/" element={<HookDemos />} />
+                    <Route path="/playground" element={<PlayGround />} />
+                </Routes>
+            </BrowserRouter>
+        </div>
     );
 }
 
