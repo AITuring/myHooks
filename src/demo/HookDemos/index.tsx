@@ -10,6 +10,7 @@ import MemoizedFnDemo from "./MemoizedFnDemo";
 import SizeDemo from "./SizeDemo";
 import HoverDemo from "./HoverDemo";
 import LazyImagesDemo from "./LazyImagesDemo";
+import '../demo.css'
 // import { usePerformanceMonitoring } from "./hooks";
 
 function HookDemos() {
@@ -47,48 +48,29 @@ function HookDemos() {
     });
 
     return (
-        <div style={{ padding: 20 }}>
+        <div  className="">
             <h2>Hooks Demo</h2>
-            <Row>
-                <Col>
-                    <CountDownDemo />
-                </Col>
-                <Col>
-                    <PreviousDemo />
-                </Col>
-                <Col>
-                    <LatestDemo />
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <UpdateEffectDemo />
-                </Col>
-                <Col>
-                    <CreationDemo />
-                </Col>
-                <Col>
-                    <FetchWithRetryDemo />
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <HoverDemo />
-                </Col>
-                <Col>
-                    <SizeDemo />
-                </Col>
-                <Col>
-                    <MemoizedFnDemo />
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <LazyImagesDemo />
-                </Col>
-                <Col></Col>
-                <Col></Col>
-            </Row>
+            <div className="grid-container">
+                <CountDownDemo />
+
+                <PreviousDemo />
+
+                <LatestDemo />
+
+                <UpdateEffectDemo />
+
+                <CreationDemo />
+
+                <FetchWithRetryDemo />
+
+                <HoverDemo />
+
+                <SizeDemo />
+
+                <MemoizedFnDemo />
+
+                <LazyImagesDemo />
+            </div>
         </div>
     );
 }

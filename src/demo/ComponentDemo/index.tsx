@@ -1,6 +1,7 @@
 import { Row, Col } from "@/components";
 
 import MessageDemo from "./MessageDemo";
+import PopOver from "@/components/Popover";
 
 function ComponentDemo() {
     return (
@@ -10,7 +11,9 @@ function ComponentDemo() {
                 <Col>
                     <MessageDemo />
                 </Col>
-                <Col></Col>
+                <Col>
+                    <PopOver />
+                </Col>
                 <Col></Col>
             </Row>
             <Row>
